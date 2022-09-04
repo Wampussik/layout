@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Monitoring</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="overlay"></div>
+<main class="wrapper">
+    <div class="header">
+        <button class="date-picker">March 5, 2021 ∨</button>
+        <div class="header-right">
+            <button id="feedback">Feedback</button>
+
+            <button><img class="setting-pic" src="images/settings.png" alt=""></button>
+            <a href="#"><img class="avatar" src="images/avatar.jpg" alt="Avatar"></a>
+        </div>
+    </div>
+
+    <nav class="left-bar">
+        <a href="#"><img src="images/home.png" alt="House Page"> </a>
+        <a href="#"> <img src="images/bed.png" alt="Bedroom"> </a>
+        <a href="#"><img src="images/lamp.png" alt="Light"></a>
+        <a href="#"><img src="images/camera.png" alt="Cameras"></a>
+        <a href="#"><img src="images/lock.png" alt="Lock"></a>
+    </nav>
+
+    <form action="" id="feedbackForm">
+        <div class="heading">Feedback</div>
+        <input class="formInput" name="name" id="name" type="text" placeholder="Name (required)">
+        <input class="formInput" id="surname" type="text" placeholder="Surname (required)">
+        <input class="formInput" id="email" type="email" placeholder="Email (required)">
+        <input class="formInput" id="phoneNumber" type="text" placeholder="Phone Number (optional)">
+        <textarea class="formInput" name="" id="userMessage" cols="30" rows="10"
+                  placeholder="Your message (required)"></textarea>
+        <div>
+            <button type="button" id="sendButton">SEND</button>
+            <button type="button" id="cancelButton">CANCEL</button>
+            <!--            <input id="sendButton" type="button" value="SEND">-->
+            <!--            <input id="cancelButton" type="button" value="CANCEL">-->
+        </div>
+    </form>
+
+    <main class="main">
+        <div class="line">
+            <div class="square">
+                <p class="square__name">power</p>
+                <div class="square__value">
+                    <p class="square__index">2412</p>
+                    <p class="square__unit">kw</p>
+                </div>
+                <img class="square__graph" src="images/graph.png" alt="">
+                <div class="line">
+
+                    <div class="square__info redColor">
+                        <div class="square__info__index">
+                            <p class="square__info__index__value">1312 kw</p>
+                            <p class="square__info__date">month</p>
+                        </div>
+                        <div class="square__info__index">
+                            <p class="square__info__index__value">250 kw</p>
+                            <p class="square__info__date">today</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="square">
+                <p class="square__name">water</p>
+                <div class="square__value">
+                    <p class="square__index">6.2</p>
+                    <p class="square__unit">m3</p>
+                </div>
+                <img class="square__graph" src="images/graph2.png" alt="">
+                <div class="line">
+
+                    <div class="square__info greenColor">
+                        <div class="square__info__index">
+                            <p class="square__info__index__value">2.3 m3</p>
+                            <p class="square__info__date">month</p>
+                        </div>
+                        <div class="square__info__index">
+                            <p class="square__info__index__value">0.3 m3</p>
+                            <p class="square__info__date">today</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="square">
+                <p class="square__name">gas</p>
+                <div class="square__value">
+                    <p class="square__index">89</p>
+                    <p class="square__unit">MPG</p>
+                </div>
+                <img class="square__graph" src="images/graph3.png" alt="">
+                <div class="line">
+
+                    <div class="square__info blueColor">
+                        <div class="square__info__index">
+                            <p class="square__info__index__value">12.4 mpg</p>
+                            <p class="square__info__date">month</p>
+                        </div>
+                        <div class="square__info__index">
+                            <p class="square__info__index__value">0.8 mpg</p>
+                            <p class="square__info__date">today</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="square">
+                <p class="square__name">power</p>
+                <div class="square__value">
+                    <p class="square__index">2412</p>
+                    <p class="square__unit">kw</p>
+                </div>
+                <img class="square__graph" src="images/graph.png" alt="">
+                <div class="line">
+
+                    <div class="square__info">
+                        <div class="square__info__index">
+                            <p class="square__info__index__value">1312 kw</p>
+                            <p class="square__info__date">month</p>
+                        </div>
+                        <div class="square__info__index">
+                            <p class="square__info__index__value">250 kw</p>
+                            <p class="square__info__date">today</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line">
+            <div class="square">
+                <p class="square__name">power</p>
+                <div class="square__value">
+                    <p class="square__index">2412</p>
+                    <p class="square__unit">kw</p>
+                </div>
+                <img class="square__graph" src="images/graph.png" alt="">
+                <div class="line">
+
+                    <div class="square__info">
+                        <div class="square__info__index">
+                            <p class="square__info__index__value">1312 kw</p>
+                            <p class="square__info__date">month</p>
+                        </div>
+                        <div class="square__info__index">
+                            <p class="square__info__index__value">250 kw</p>
+                            <p class="square__info__date">today</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="square">
+                <div class="temperature">
+                    <img src="images/temperature.png" alt="">
+                    <div class="temperature__value">
+                        <p class="temperature__value__index">28</p>
+                        <p class="temperature__value__unit">°C</p>
+                    </div>
+                    <label>
+                        <input type="range" min="0" max="100" value="50" class="range"/>
+                    </label>
+                </div>
+            </div>
+            <div class="rectangle">
+                <div class="weather">
+                    <p>Mon</p>
+                    <img src="images/sun.png" alt="">
+                    <p>30°</p>
+                </div>
+                <div class="weather">
+                    <p>Tue</p>
+                    <img src="images/rain.png" alt="">
+                    <p>33°</p>
+                </div>
+                <div class="weather">
+                    <p>Wed</p>
+                    <img src="images/weter.png" alt="">
+                    <p>29°</p>
+                </div>
+                <div class="weather">
+                    <p>Thur</p>
+                    <img src="images/sun.png" alt="">
+                    <p>28°</p>
+                </div>
+                <div class="weather">
+                    <p>Fri</p>
+                    <img src="images/weter.png" alt="">
+                    <p>31°</p>
+                </div>
+            </div>
+        </div>
+        <div class="line">
+            <div class="switches">
+                <div class="line">
+                    <div class="rectangle switch">
+                        <div class="switch__name">
+                            <img src="images/lamp.png" alt="">
+                            <p>Lights</p>
+                        </div>
+                        <label class="switch__toggle">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="rectangle switch">
+                        <div class="switch__name">
+                            <img src="images/camera.png" alt="">
+                            <p>Camera</p>
+                        </div>
+                        <label class="switch__toggle">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="rectangle switch">
+                        <div class="switch__name">
+                            <img src="images/flame.png" alt="">
+                            <p>Gas</p>
+                        </div>
+                        <label class="switch__toggle">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="rectangle switch">
+                        <div class="switch__name">
+                            <img src="images/lock.png" alt="">
+                            <p>Locks</p>
+                        </div>
+                        <label class="switch__toggle">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="line">
+                <img class="photo" src="images/photo_bed.jpg" alt="">
+                <img class="photo" src="images/kitchen.jpeg" alt="">
+            </div>
+        </div>
+    </main>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
